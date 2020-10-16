@@ -191,9 +191,6 @@ PRODUCT_PACKAGES += \
 #     qcom.fmradio \
 #     qcom.fmradio.xml
 
-# PRODUCT_BOOT_JARS += \
-#     qcom.fmradio
-
 # GPS
 PRODUCT_PACKAGES += \
     android.hardware.gnss@2.1.vendor
