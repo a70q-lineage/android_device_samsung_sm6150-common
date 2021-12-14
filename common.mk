@@ -125,7 +125,7 @@ PRODUCT_COPY_FILES += \
 # ANT+
 PRODUCT_PACKAGES += \
     AntHalService
-    
+
 # Bluetooth
 PRODUCT_PACKAGES += \
     vendor.qti.hardware.bluetooth_audio@2.0.vendor \
@@ -181,7 +181,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.drm@1.0-impl \
     android.hardware.drm@1.0-service \
-    android.hardware.drm@1.3-service.clearkey
+    android.hardware.drm@1.1.vendor \
+    android.hardware.drm@1.2.vendor \
+    android.hardware.drm@1.3-service.clearkey \
+    android.hardware.drm@1.3.vendor
 
 # Fingerprint feature
 PRODUCT_PACKAGES += \
@@ -220,10 +223,16 @@ PRODUCT_COPY_FILES += \
     $(COMMON_PATH)/configs/gps/lowi.conf:$(TARGET_COPY_OUT_VENDOR)/etc/lowi.conf \
     $(COMMON_PATH)/configs/gps/sap.conf:$(TARGET_COPY_OUT_VENDOR)/etc/sap.conf
 
+# Health
+PRODUCT_PACKAGES += \
+    android.hardware.health@2.1.vendor
+
 # HIDL
 PRODUCT_PACKAGES += \
+    android.hidl.allocator@1.0.vendor \
     android.hidl.base@1.0 \
     android.hidl.base@1.0.vendor \
+    android.hidl.memory@1.0.vendor \
 	libhidltransport \
 	libhidltransport.vendor \
 	libhwbinder \
@@ -246,7 +255,7 @@ PRODUCT_COPY_FILES += \
 
 # Keymaster
 PRODUCT_PACKAGES += \
-    android.hardware.keymaster@4.0-service.samsung
+    android.hardware.keymaster@4.0.vendor
 
 # Lights
 PRODUCT_PACKAGES += \
@@ -272,6 +281,13 @@ PRODUCT_COPY_FILES += \
 # MSM IRQ
 PRODUCT_COPY_FILES += \
     $(COMMON_PATH)/configs/msm_irqbalance.conf:$(TARGET_COPY_OUT_VENDOR)/etc/msm_irqbalance.conf
+
+# Neuralnetworks
+PRODUCT_PACKAGES += \
+    android.hardware.neuralnetworks@1.0.vendor \
+    android.hardware.neuralnetworks@1.1.vendor \
+    android.hardware.neuralnetworks@1.2.vendor \
+    android.hardware.neuralnetworks@1.3.vendor
 
 # NFC
 PRODUCT_PACKAGES += \
@@ -312,6 +328,7 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     android.hardware.power@1.0-impl \
     android.hardware.power@1.0-service \
+    android.hardware.power@1.0.vendor \
     power.qcom:64
 
 # QCOM
@@ -349,7 +366,7 @@ PRODUCT_PACKAGES += \
     rcs_service_api \
     rcs_service_api.xml
 
-# RenderScript HAL
+# RenderScript
 PRODUCT_PACKAGES += \
     android.hardware.renderscript@1.0-impl
 
@@ -357,7 +374,9 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.radio@1.3-radio-service.samsung \
     vendor.samsung.hardware.radio@2.1.vendor \
-    android.hardware.radio.config@1.0 \
+    android.hardware.radio@1.4.vendor \
+    android.hardware.radio.config@1.2.vendor \
+    android.hardware.radio.deprecated@1.0.vendor \
     libjson \
     librmnetctl \
     libxml2 \
@@ -391,7 +410,7 @@ PRODUCT_BOOT_JARS += \
 
 # Thermal
 PRODUCT_PACKAGES += \
-    android.hardware.thermal@2.0-service.qti
+    android.hardware.thermal@2.0.vendor
 
 # TextClassifier
 PRODUCT_PACKAGES += \
@@ -404,6 +423,11 @@ PRODUCT_PACKAGES += \
 # Trust HAL
 PRODUCT_PACKAGES += \
     vendor.lineage.trust@1.0-service
+
+# USB
+PRODUCT_PACKAGES += \
+    android.hardware.usb@1.0.vendor \
+    android.hardware.usb@1.1.vendor
 
 # Vibrator
 PRODUCT_PACKAGES += \
