@@ -431,7 +431,7 @@ PRODUCT_PACKAGES += \
 
 # Vibrator
 PRODUCT_PACKAGES += \
-    android.hardware.vibrator@1.3-service.sm6150
+    android.hardware.vibrator-service.sm6150
 
 # VNDK
 PRODUCT_COPY_FILES += \
