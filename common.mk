@@ -183,7 +183,8 @@ PRODUCT_PACKAGES += \
 
 # Fingerprint
 PRODUCT_PACKAGES += \
-    android.hardware.biometrics.fingerprint@2.3-service-samsung.sm6150
+    android.hardware.biometrics.fingerprint@2.3-service-samsung.sm6150 \
+    SamsungUdfpsHandler.sm6150
 
 # FM
 # PRODUCT_PACKAGES += \
