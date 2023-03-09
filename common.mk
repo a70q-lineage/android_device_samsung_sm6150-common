@@ -291,7 +291,6 @@ PRODUCT_PACKAGES += \
     com.android.nfc_extras \
     libnfc-nci \
     libnfc_nci_jni \
-    NfcNci \
     Tag \
     vendor.nxp.nxpese@1.0:64 \
     vendor.nxp.nxpnfc@1.0:64 \
