@@ -327,6 +327,10 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.perf@2.1.vendor \
     vendor.qti.hardware.perf@2.2.vendor
 
+# Protobuf
+PRODUCT_PACKAGES += \
+    libprotobuf-cpp-lite-3.9.1-vendorcompat
+
 # QCOM
 PRODUCT_COPY_FILES += \
     $(COMMON_PATH)/configs/privapp-permissions-qti.xml:system/etc/permissions/privapp-permissions-qti.xml \
