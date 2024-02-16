@@ -15,10 +15,10 @@
 //
 
 cc_library_static {
-    name: "libinit_a70q",
+    name: "libinit_sm6150",
     recovery_available: true,
     srcs: [
-        "init_a70q.cpp",
+        "init_sm6150.cpp",
     ],
     include_dirs: [
         "system/core/base/include",

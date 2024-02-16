@@ -13,6 +13,6 @@ LOCAL_SHARED_LIBRARIES := \
 LOCAL_C_INCLUDES := hardware/ril/include
 LOCAL_EXPORT_C_INCLUDE_DIRS := hardware/ril/include
 
-LOCAL_MODULE := libril_a70q
+LOCAL_MODULE := libril_sm6150
 
 include $(BUILD_SHARED_LIBRARY)

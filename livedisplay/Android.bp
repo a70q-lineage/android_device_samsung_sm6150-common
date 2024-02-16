@@ -13,8 +13,8 @@
 // limitations under the License.
 
 cc_binary {
-    name: "vendor.lineage.livedisplay@2.0-service.samsung-a70q",
-    init_rc: ["vendor.lineage.livedisplay@2.0-service.samsung-a70q.rc"],
+    name: "vendor.lineage.livedisplay@2.0-service.samsung-sm6150",
+    init_rc: ["vendor.lineage.livedisplay@2.0-service.samsung-sm6150.rc"],
     defaults: ["hidl_defaults"],
     relative_install_path: "hw",
     srcs: [

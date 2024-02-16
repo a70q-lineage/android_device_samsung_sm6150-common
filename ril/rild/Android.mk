@@ -10,7 +10,7 @@ LOCAL_SHARED_LIBRARIES := \
 	libcutils \
 	libdl \
 	liblog \
-	libril_a70q \
+	libril_sm6150 \
 	libril
 
 # Temporary hack for broken vendor RILs.
