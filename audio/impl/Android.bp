@@ -1,5 +1,5 @@
 cc_defaults {
-    name: "android.hardware.audio-impl_a70q",
+    name: "android.hardware.audio-impl_sm6150",
     relative_install_path: "hw",
     proprietary: true,
     vendor: true,
@@ -45,8 +45,8 @@ cc_defaults {
 }
 
 cc_library_shared {
-    name: "android.hardware.audio@2.0-impl.a70q",
-    defaults: ["android.hardware.audio-impl_a70q"],
+    name: "android.hardware.audio@2.0-impl.sm6150",
+    defaults: ["android.hardware.audio-impl_sm6150"],
     shared_libs: [
         "android.hardware.audio@2.0",
         "android.hardware.audio.common@2.0",
@@ -60,8 +60,8 @@ cc_library_shared {
 }
 
 cc_library_shared {
-    name: "android.hardware.audio@4.0-impl.a70q",
-    defaults: ["android.hardware.audio-impl_a70q"],
+    name: "android.hardware.audio@4.0-impl.sm6150",
+    defaults: ["android.hardware.audio-impl_sm6150"],
 
     shared_libs: [
         "android.hardware.audio@4.0",
@@ -76,8 +76,8 @@ cc_library_shared {
 }
 
 cc_library_shared {
-    name: "android.hardware.audio@5.0-impl.a70q",
-    defaults: ["android.hardware.audio-impl_a70q"],
+    name: "android.hardware.audio@5.0-impl.sm6150",
+    defaults: ["android.hardware.audio-impl_sm6150"],
     shared_libs: [
         "android.hardware.audio@5.0",
         "android.hardware.audio.common@5.0",
@@ -91,8 +91,8 @@ cc_library_shared {
 }
 
 cc_library_shared {
-    name: "android.hardware.audio@6.0-impl.a70q",
-    defaults: ["android.hardware.audio-impl_a70q"],
+    name: "android.hardware.audio@6.0-impl.sm6150",
+    defaults: ["android.hardware.audio-impl_sm6150"],
     shared_libs: [
         "android.hardware.audio@6.0",
         "android.hardware.audio.common@6.0",

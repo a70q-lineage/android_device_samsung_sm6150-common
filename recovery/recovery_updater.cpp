@@ -57,6 +57,6 @@ Value *VerifyBootloader(const char *name, State *state,
   return StringValue(std::to_string(ret));
 }
 
-void Register_librecovery_updater_a70q() {
-  RegisterFunction("a70q.verify_bootloader", VerifyBootloader);
+void Register_librecovery_updater_sm6150() {
+  RegisterFunction("sm6150.verify_bootloader", VerifyBootloader);
 }

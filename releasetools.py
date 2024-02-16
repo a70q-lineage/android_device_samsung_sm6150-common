@@ -31,7 +31,7 @@ def AddBootloaderAssertion(info, input_zip):
   m = re.search(r'require\s+version-bootloader\s*=\s*(\d)$', android_info)
   if m:
     bootloader_version = m.group(1)
-    cmd = ('assert(a70q.verify_bootloader("{}") == "1" || abort("ERROR: This package '
+    cmd = ('assert(sm6150.verify_bootloader("{}") == "1" || abort("ERROR: This package '
            'requires bootloader version 5 or older. Please wait until your '
            'firmware is supported."););'.format(bootloader_version))
     info.script.AppendExtra(cmd)
