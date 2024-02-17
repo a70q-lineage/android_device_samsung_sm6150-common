@@ -322,6 +322,7 @@ vendor/lib64/libsdsprpc.so
 
 # Charger
 -vendor/bin/hvdcp_opti
+vendor/etc/charger_fstab.qti
 
 # CVP
 vendor/lib/rfsa/adsp/libcvpdsp_skel.so
@@ -964,6 +965,7 @@ vendor/lib64/vendor.samsung.hardware.thermal@1.0.so
 # Time
 vendor/app/TimeService/TimeService.apk
 vendor/bin/time_daemon
+vendor/etc/init/init.time_daemon.rc
 vendor/lib/libtime_genoff.so
 vendor/lib64/libtime_genoff.so
 
@@ -981,6 +983,7 @@ vendor/lib/libQSEEComAPI.so
 vendor/lib/libSecureUILib.so
 vendor/lib/libStDrvInt.so
 vendor/lib/libminkdescriptor.so
+vendor/lib/libops.so
 vendor/lib/libqcbor.so
 vendor/lib/libqisl.so
 vendor/lib/librpmb.so
@@ -996,6 +999,7 @@ vendor/lib64/libQSEEComAPI.so
 vendor/lib64/libSecureUILib.so
 vendor/lib64/libStDrvInt.so
 vendor/lib64/libminkdescriptor.so
+vendor/lib64/libops.so
 vendor/lib64/libqcbor.so
 vendor/lib64/libqisl.so
 vendor/lib64/librpmb.so
