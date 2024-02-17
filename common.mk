@@ -349,7 +349,6 @@ PRODUCT_PACKAGES += \
 # Ramdisk etc
 PRODUCT_PACKAGES += \
     fstab.qcom \
-    init.a70q.rc \
     init.qcom.factory.rc \
     init.qcom.rc \
     init.qcom.usb.rc \
