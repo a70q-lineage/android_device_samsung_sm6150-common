@@ -380,6 +380,7 @@ PRODUCT_PACKAGES += \
     libjson \
     librmnetctl \
     libxml2 \
+    librilutils \
     secril_config_svc \
     libprotobuf-cpp-full \
     libtrafficcontrol-spoofer \
