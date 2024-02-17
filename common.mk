@@ -91,7 +91,6 @@ PRODUCT_PACKAGES += \
     libaudio-resampler \
     libqcomvisualizer \
     libqcomvoiceprocessing \
-    libqcomvoiceprocessing \
     libqcompostprocbundle \
     libvolumelistener \
     SamsungDAP
@@ -178,17 +177,17 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.biometrics.fingerprint@2.3-service-samsung.sm6150
 
-# Gatekeeper HAL
-PRODUCT_PACKAGES += \
-    android.hardware.gatekeeper@1.0-impl \
-    android.hardware.gatekeeper@1.0-service
-
 # FM
 # PRODUCT_PACKAGES += \
 #     FM2 \
 #     libqcomfm_jni \
 #     qcom.fmradio \
 #     qcom.fmradio.xml
+
+# Gatekeeper HAL
+PRODUCT_PACKAGES += \
+    android.hardware.gatekeeper@1.0-impl \
+    android.hardware.gatekeeper@1.0-service
 
 # GPS
 PRODUCT_PACKAGES += \
@@ -366,7 +365,7 @@ PRODUCT_PACKAGES += \
     librilutils \
     secril_config_svc \
     libprotobuf-cpp-full \
-    libcutils_shim
+    libcutils_shim.vendor
 
 # Seccomp policy
 PRODUCT_COPY_FILES += \
