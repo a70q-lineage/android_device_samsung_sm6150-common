@@ -1071,4 +1071,14 @@
          <!-- ID0:Fingerprint:Strong -->
          <item>0:2:15</item>
      </string-array>
+
+    <!-- The properties of a UDFPS sensor in pixels, in the order listed below: -->
+    <integer-array name="config_udfps_sensor_props" translatable="false" >
+        <item>540</item>  <!-- <item>sensorLocationX</item> -->
+        <item>2130</item> <!-- <item>sensorLocationY</item> -->
+        <item>105</item>   <!-- <item>sensorRadius</item> -->
+    </integer-array>
+
+    <!-- For performance and storage reasons, limit the number of fingerprints per user -->
+    <integer name="config_fingerprintMaxTemplatesPerUser">4</integer>
 </resources>
