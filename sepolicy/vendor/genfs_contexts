@@ -22,6 +22,12 @@ genfscon sysfs /power/cpufreq_max_limit                                         
 genfscon sysfs /power/cpufreq_min_limit                                                                                                      u:object_r:sysfs_power:s0
 genfscon sysfs /power/cpufreq_table                                                                                                          u:object_r:sysfs_power:s0
 genfscon sysfs /wifi                                                                                                                         u:object_r:sysfs_wifi:s0
+genfscon sysfs /class/input                                                                                 u:object_r:sysfs_input:s0
+genfscon sysfs /class/sec/tsp                                                                               u:object_r:sysfs_sec_touchscreen:s0
+genfscon sysfs /class/sensor_event                                                                          u:object_r:sysfs_sensors:s0
+genfscon sysfs /class/fingerprint/fingerprint                                                               u:object_r:sysfs_fingerprint:s0
+genfscon sysfs /devices/virtual/sensors/                                                                    u:object_r:sysfs_sensors:s0
+genfscon sysfs /devices/virtual/fingerprint/fingerprint                                                     u:object_r:sysfs_fingerprint:s0
 
 genfscon sysfs /devices/platform/soc/c440000.qcom,spmi/spmi-0/spmi0-00/c440000.qcom,spmi:qcom,pm6150@0:qcom,qpnp-smb5/power_supply/battery   u:object_r:sysfs_batteryinfo:s0
 genfscon sysfs /devices/platform/soc/c440000.qcom,spmi/spmi-0/spmi0-00/c440000.qcom,spmi:qcom,pm6150@0:qcom,qpnp-smb5/power_supply           u:object_r:sysfs_batteryinfo:s0
