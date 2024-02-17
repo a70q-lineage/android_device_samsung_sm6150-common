@@ -678,9 +678,7 @@ vendor/etc/init/android.hardware.health@2.1-service-samsung.rc
 -vendor/etc/vintf/manifest/android.hardware.health@2.1-samsung.xml
 vendor/lib/hw/android.hardware.health@2.0-impl-2.1-samsung.so
 vendor/lib/vendor.samsung.hardware.health@2.0.so
-vendor/lib/libsystem_health_mon.so
 vendor/lib64/hw/android.hardware.health@2.0-impl-2.1-samsung.so
-vendor/lib64/libsystem_health_mon.so
 vendor/lib64/vendor.samsung.hardware.health@2.0.so
 
 # Firmware
@@ -927,6 +925,8 @@ vendor/etc/init/android.hardware.gnss@2.1-service-qti.rc
 vendor/lib/hw/android.hardware.gnss@2.1-impl-qti.so
 #vendor/lib/hw/vendor.qti.gnss@3.0-impl.so
 vendor/lib/hw/vendor.samsung.hardware.gnss@2.0-impl-sec.so
+vendor/lib/libcdfw_remote_api.so
+vendor/lib/libcdfw.so
 vendor/lib/libdataitems.so
 vendor/lib/libfloatingfeature.so
 vendor/lib/libgarden.so
@@ -960,6 +960,8 @@ vendor/lib/vendor.samsung.hardware.gnss@2.0.so
 vendor/lib64/hw/android.hardware.gnss@2.1-impl-qti.so
 #vendor/lib64/hw/vendor.qti.gnss@3.0-impl.so
 vendor/lib64/hw/vendor.samsung.hardware.gnss@2.0-impl-sec.so
+vendor/lib64/libcdfw_remote_api.so
+vendor/lib64/libcdfw.so
 vendor/lib64/libdataitems.so
 vendor/lib64/libfloatingfeature.so
 vendor/lib64/libgarden.so
@@ -975,6 +977,7 @@ vendor/lib64/liblocation_api.so
 vendor/lib64/liblocationservice_glue.so
 vendor/lib64/liblocationservice.so
 vendor/lib64/libloc_core.so
+vendor/lib64/libloc_socket.so
 vendor/lib64/liblowi_client.so
 #vendor/lib64/liblowi_wifihal.so
 vendor/lib64/libqdma_file_agent.so
@@ -1472,7 +1475,7 @@ vendor/etc/init/android.hardware.usb@1.1-service.wahoo.rc
 
 # Wifi
 vendor/bin/hw/macloader
--vendor/bin/cnss_diag
+#vendor/bin/cnss_diag
 vendor/bin/cnss-daemon
 vendor/firmware/wlan/qca_cld/bdwlan.bin
 vendor/firmware/wlan/qca_cld/grippower.info
