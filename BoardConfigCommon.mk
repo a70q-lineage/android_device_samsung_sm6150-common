@@ -191,6 +191,10 @@ TARGET_COPY_OUT_VENDOR := vendor
 
 TARGET_USES_MKE2FS := true
 
+# Properties
+TARGET_SYSTEM_PROP += $(COMMON_PATH)/system.prop
+TARGET_VENDOR_PROP += $(COMMON_PATH)/vendor.prop
+
 # QCOM
 BOARD_USES_QCOM_HARDWARE := true
 
