@@ -343,6 +343,7 @@ PRODUCT_PACKAGES += \
     init.qcom.usb.rc \
     init.target.rc \
     init.udfps.rc \
+    init.vendor.onebinary.rc \
     init.vendor.rilchip.rc \
     init.vendor.rilcommon.rc \
     ueventd.qcom.rc \
