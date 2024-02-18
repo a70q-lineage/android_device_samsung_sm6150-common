@@ -83,6 +83,7 @@ PRODUCT_PACKAGES += \
     android.hardware.audio@6.0-impl.sm6150 \
     android.hardware.audio.effect@6.0-impl \
     android.hardware.soundtrigger@2.2-impl \
+    audio.primary.sm6150 \
     audio.r_submix.default \
     audio.usb.default \
     libaudio-resampler \
