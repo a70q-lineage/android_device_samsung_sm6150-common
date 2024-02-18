@@ -21,7 +21,6 @@ COMMON_PATH := device/samsung/sm6150-common
 
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
-    device/samsung/qcom-common/overlay \
     $(COMMON_PATH)/overlay \
     $(COMMON_PATH)/overlay-lineage
 
