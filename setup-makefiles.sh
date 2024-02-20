@@ -35,7 +35,7 @@ source "${HELPER}"
 setup_vendor "${DEVICE_COMMON}" "${VENDOR}" "${LINEAGE_ROOT}" true
 
 # Warning headers and guards
-write_headers "a70q"
+write_headers "a70q a70s"
 
 # The standard common blobs
 write_makefiles "${MY_DIR}/proprietary-files.txt" true

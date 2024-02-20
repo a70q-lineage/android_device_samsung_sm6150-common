@@ -12,6 +12,8 @@ enum device_variant {
     VARIANT_A705W,
     VARIANT_A705YN,
     VARIANT_A705U,
+    VARIANT_A707F,
+    VARIANT_A7070,
     VARIANT_MAX
 };
 
@@ -60,6 +62,16 @@ static const variant u_models = {
     .codename = "a70q"
 };
 
+static const variant f_models_a70s = {
+    .model = "SM-A707F",
+    .codename = "a70s"
+};
+
+static const variant zero_models_a70s = {
+    .model = "SM-A7070",
+    .codename = "a70s"
+};
+
 static const variant *all_variants[VARIANT_MAX] = {
     &f_models,
     &international_models,
@@ -68,7 +80,9 @@ static const variant *all_variants[VARIANT_MAX] = {
     &zero_models,
     &w_models,
     &yn_models,
-    &u_models
+    &u_models,
+    &f_models_a70s,
+    &zero_models_a70s
 };
 
 #endif // INIT_SEC_H
