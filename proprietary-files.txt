@@ -364,7 +364,7 @@ vendor/etc/init/android.hardware.health@2.1-service-samsung.rc
 vendor/etc/vintf/manifest/android.hardware.health@2.1-samsung.xml
 vendor/lib/hw/android.hardware.health@2.0-impl-2.1-samsung.so
 vendor/lib/vendor.samsung.hardware.health@2.0.so
-vendor/lib64/hw/android.hardware.health@2.0-impl-2.1-samsung.so
+vendor/lib64/hw/android.hardware.health@2.0-impl-2.1-samsung.so|53a2a08c9a9f3eb430c84b17d4dd236147f57288
 vendor/lib64/vendor.samsung.hardware.health@2.0.so
 
 # Firmware
@@ -864,8 +864,8 @@ vendor/lib64/libqrtr.so
 vendor/lib64/libqsocket.so
 -vendor/lib64/libril.so
 vendor/lib64/librilqmiservices-ext.so
-vendor/lib64/libsec-ril-dsds.so
-vendor/lib64/libsec-ril.so
+vendor/lib64/libsec-ril-dsds.so|88c7832ca0485ff5747cdf1b3e299045f4c53678
+vendor/lib64/libsec-ril.so|5218219d7bfe7e0dbec77823c73d85ccdf4caeb5
 vendor/lib64/libsec_semRil.so
 vendor/lib64/libsecril-client.so
 vendor/lib64/libsemnativecarrierfeature.so
