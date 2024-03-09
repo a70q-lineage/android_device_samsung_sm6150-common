@@ -33,24 +33,13 @@ Value *VerifyBootloader(const char *name, State *state,
     return ErrorAbort(state, kArgsParsingFailure,
                       "%s() error parsing arguments", name);
   }
-  int8_t supported_bootloader = supported_bootloader_arg[0] - '0';
+  int supported_bootloader = int(supported_bootloader_arg[0]);
 
-  size_t offset = bootloader.find("A705");
-  if (offset == std::string::npos) {
-    return ErrorAbort(state, kArgsParsingFailure,
-                      "%s() failed to parse current bootloader version", name);
-  }
+  int version = 0;
+  if (bootloader.length() >= 4)
+    version = int(bootloader[bootloader.length() - 4]);
 
-  // First digit after offset + 1 is the bootloader version
-  int8_t version = -1;
-  for (size_t i = offset + 1; i < bootloader.size(); ++i) {
-    if (bootloader[i] >= '0' && bootloader[i] <= '9') {
-      version = bootloader[i];
-      break;
-    }
-  }
-
-  if (version < 0 || version > supported_bootloader) {
+  if (version >= supported_bootloader) {
     ret = 1;
   }
 
