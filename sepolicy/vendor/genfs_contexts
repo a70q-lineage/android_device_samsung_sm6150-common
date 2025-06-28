@@ -25,6 +25,8 @@ genfscon sysfs /devices/virtual/fingerprint/fingerprint                         
 genfscon sysfs /devices/virtual/lcd/panel                                                          u:object_r:sysfs_lcd_writable:s0
 genfscon sysfs /devices/virtual/sec/hall_ic/                                                       u:object_r:sysfs_sensors:s0
 genfscon sysfs /devices/virtual/sec/sec_key                                                        u:object_r:sysfs_sec_key:s0
+genfscon sysfs /devices/virtual/sec/sliding_motor/enable                                           u:object_r:sysfs_ski_camera_writable:s0
+genfscon sysfs /devices/virtual/sec/sliding_motor/retry                                            u:object_r:sysfs_ski_camera_writable:s0
 genfscon sysfs /devices/virtual/sec/tsp                                                            u:object_r:sysfs_sec_touchscreen:s0
 genfscon sysfs /devices/virtual/sec/tsp/cmd                                                        u:object_r:sysfs_touchscreen_writable:s0
 genfscon sysfs /devices/virtual/sec/tsp/prox_power_off                                             u:object_r:sysfs_touchscreen_writable:s0

@@ -47,7 +47,6 @@ type proc_swappiness, fs_type, proc_type;
 type omr_file, file_type, mlstrustedobject;
 
 # sysfs
-
 type sysfs_camera, sysfs_type, r_fs_type, fs_type;
 type sysfs_fingerprint, sysfs_type, r_fs_type, fs_type;
 type sysfs_fpc, sysfs_type, r_fs_type, fs_type;
@@ -66,6 +65,7 @@ type sysfs_lcd_writable, sysfs_type, rw_fs_type, fs_type;
 type sysfs_mdnie_writable, sysfs_type, rw_fs_type, fs_type;
 type sysfs_power_writable, sysfs_type, rw_fs_type, fs_type;
 type sysfs_sec_switch_writable, sysfs_type, rw_fs_type, fs_type;
+type sysfs_ski_camera_writable, sysfs_type, rw_fs_type, fs_type;
 type sysfs_ss_writable, sysfs_type, rw_fs_type, fs_type;
 type sysfs_touchscreen_writable, sysfs_type, rw_fs_type, fs_type;
 type sysfs_wifi_writable, sysfs_type, rw_fs_type, fs_type;

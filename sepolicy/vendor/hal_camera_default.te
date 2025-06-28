@@ -4,6 +4,13 @@ allow hal_camera_default app_efs_file:file rw_file_perms;
 allow hal_camera_default sysfs_camera_writable:dir r_dir_perms;
 allow hal_camera_default sysfs_camera_writable:file rw_file_perms;
 
+# /sys/devices/virtual/sec/sliding_motor/
+allow hal_camera_default sysfs_ski_camera_writable:file rw_file_perms;
+
+# /sys/devices/virtual/sec/sec_key/
+allow hal_camera_default sysfs_sec_key:dir r_dir_perms;
+allow hal_camera_default sysfs_sec_key:file r_file_perms;
+
 allow hal_camera_default vendor_sysfs_sensors:file r_file_perms;
 
 r_dir_file(hal_camera_default, efs_file)
