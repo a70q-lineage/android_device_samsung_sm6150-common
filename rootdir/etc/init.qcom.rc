@@ -201,7 +201,7 @@ on boot
     chown bluetooth bluetooth /dev/btlock
 
     # Camera motor permission
-    chown system system /sys/class/sec/sliding_motor/enable
+    chown system camera /sys/class/sec/sliding_motor/enable
 
     # This location is used by QCRIL to host UNIX domain
     # socket files used for internal IPC within QCRIL
